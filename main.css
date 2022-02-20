@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: black;
+    color: rgb(235, 226, 226);
+}
+
+div, p, input, button, form, span, a, ul, li, img {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Contacts {
+    width: 440px;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    font-size: 15px;
+}
+
+.logo p {
+    text-decoration: none;
+    color: rgb(253, 253, 93);
+    width: 98px;
+    border: rgb(253, 253, 93) 1px solid;
+    padding: 5px;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.offer {
+    width: 440px;
+  
+}
+
+.offer a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 7px;
+}
+
+.offer a:hover {
+    color: rgb(253, 253, 93);
+}
+
+.title1 {
+    margin: 50px 0px 30px 20px;
+}
+
+.title2 {
+    margin: 20px 0px 30px 90px;
+}
+
+.intro {
+    margin: 0;
+}
+
+.phone {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Contacts_a {
+    text-decoration: none;
+    color: white;
+}
+ 
+.working_hours {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px;
+}
+
+
+
+.title_section_about_Us {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+    color: rgb(253, 253, 93);
+    font-size: 30px;
+}
+
+.text_section_about_Us {
+    margin: 0px 20px;
+    text-align: justify;
+}
+
+ul {
+    padding-inline-start: 10px;
+}
+
+li {
+    margin: 0 10px 5px 10px;
+    list-style-type: none;
+}
+
+li::before {
+    content: "•";
+    padding-right: 8px;
+    color: yellow;
+    font-size: 25px;
+}
+
+.service_prices {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.recording_form_title {
+    width: 650px;
+    margin: 30px auto;
+}
+
+span {
+    color: rgb(253, 253, 93);
+}
+
+.prices {
+    width: 300px;
+    background-color: rgb(14, 14, 13);
+    box-shadow: 2px 5px 100px 0px rgba(117, 110, 110, 0.3);
+    margin: 20px;
+    padding: 5px;
+}
+
+.prices_prices {
+    justify-content: center;
+    
+}
+
+.section_car_service {
+    border: 1px solid rgba(117, 110, 110, 0.3);
+    box-shadow: 2px 5px 20px 5px rgba(117, 110, 110, 0.3);
+}
+
+.section_car_wash {
+    border: 1px solid rgba(117, 110, 110, 0.3);
+    box-shadow: 2px 1px 10px 5px rgba(117, 110, 110, 0.3);
+}
+
+.inspection_h3 {
+    height: 40px;
+    display: flex;
+}
+
+.inspection {
+    text-align: center;
+    font-size: 20px;
+    color:rgb(253, 253, 93);
+    margin: auto;
+    
+}
+
+.recording {
+    background-color: rgb(253, 253, 93);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 250px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+form {
+   margin-left:  auto;
+   margin-right: auto;
+   width: 400px;  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+
+.recording_form {
+    padding: 30px 0;
+}
+
+.recording_form_h2 {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    border: 1px solid #d8d4d4;
+    font-size: 15px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    display: block;
+    background-color: rgb(230, 219, 219);
+    border-radius: 10px;
+    border: 1px solid rgba(117, 110, 110, 0.3);
+    box-shadow: 2px 5px 10px 5px rgba(117, 110, 110, 0.3);
+}
+
+.wash_prices {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+
+/*992-1200*/
+@media screen and (max-width: 1200px) {
+.container {
+    width: 960px; 
+}
+
+.desktop {
+    width: 500px;
+}
+.offer {
+    width: auto;
+    }
+
+.Contacts {
+    width: auto;
+}
+}
+
+/*768-992*/
+@media screen and (max-width: 992px) {
+.container {
+    width: 720px; 
+}
+.desktop {
+    width: 380px;
+}
+
+.service_prices {
+    display: block;
+}
+
+.wash_prices {
+    display: block;
+}
+
+.prices {
+    width: 650px; 
+}
+}
+
+/*576-768*/
+@media screen and (max-width: 768px) {
+.container {
+    width: 540px; 
+}
+.Contacts {
+    width: 240px;
+    right: 5px;
+    font-size: 14px;
+}
+.working_hours {
+    font-size: 14px;
+}
+.wrapper {
+    display: block;
+}
+.desktop {
+    width: 500px;
+    margin: 0 auto;
+}
+.prices {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.recording_form_title {
+    width: 400px;
+}
+}
+
+/*0-576*/
+@media screen and (max-width: 576px) {
+.container {
+    width: 95%; 
+}
+.Contacts {
+    width: 200px;
+    text-align: right;
+    font-size: 12px;
+}
+.logo p {
+    width: 70px;
+    font-size: 10px;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.desktop {
+    width: 290px;
+    margin: 0 auto;
+}
+.offer {
+   font-size: 12px;
+}
+.prices {
+    width: 95%;
+}
+.recording_form_title {
+    width: 90%;
+    font-size: 10px;
+}
+}
